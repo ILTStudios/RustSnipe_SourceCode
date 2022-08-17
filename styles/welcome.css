@@ -1,0 +1,96 @@
+.welcome{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    margin: 10rem 0rem 0rem 0rem;
+}
+.arrow div{
+    height: 60px;
+    width: 60px;
+    border: solid white;
+    border-width: 0px 3px 3px 0px;
+    display: inline-block;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transition: all .2s ease;
+    margin: 2rem 0 0 0;
+}.arrow div:hover{
+    border: solid var(--brown);
+    cursor: pointer;
+    border-width: 0px 3px 3px 0px;
+    display: inline-block;
+    margin: 3rem 0 0 0;
+}.arrow a{
+    height: 100%;
+    width: 100%;
+}
+.subtext{
+    color: white;
+    font-size: 2rem;
+    font-weight: 700;
+}
+.main-welcome{
+    color: var(--brown);
+    font-size: 3.5rem;
+    font-weight: 800;
+}
+.gray-sub{
+    color: var(--highlight);
+    font-size: 1.15rem;
+    font-weight: 400;
+}
+
+.about{
+    width: 100%;
+    color: white;
+    margin: 2rem;
+}.about div{
+    width: 100%;
+}
+.about div div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem 0 0 0;
+}
+.about-heading{
+    font-size: 2rem;
+    font-weight: 200;
+    width: 100%;
+    color: white;
+    margin: 0 0 0 2rem;
+}
+.about-context{
+    font-size: .75rem;
+    margin: 1rem;
+}
+.main-welc{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 1rem 0rem 0rem 0rem;
+}
+
+.welc-buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 1rem 0 0 0;
+}.welc-buttons div{
+    background-color: var(--brown);
+    color: white;
+    font-weight: 300;
+    margin: 0rem 1rem 0rem 1rem;
+    padding: 1rem;
+    width: 15%;
+    text-align: center;
+    transition: all .2s ease;
+}.welc-buttons div:hover{
+    background-color: var(--black);
+    color: var(--brown);
+    cursor: pointer;
+}

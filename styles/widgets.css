@@ -1,0 +1,139 @@
+.widgets{
+    height: 50vh;
+    width: 75vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}   
+
+
+.friends-widget,
+.inventory-widget,
+.current-sales-widget{
+    background-color: var(--background);
+    color: white;
+    width: 35vw;
+    border-radius: .25rem;
+}
+
+
+.widget-heading{
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: var(--background);
+    padding: .5rem 0rem .5rem 1rem;
+    background-color: #ffffff99;
+    border-radius: 0rem 0rem .5rem 0rem;
+}.widget-heading .underline{
+    background-color: wheat;
+}
+
+
+.friends-widget{
+    height: 47vh;
+    margin: 0rem 1rem 0rem 0rem;
+}
+.inventory-widget{
+    height: 22.5vh;
+    margin: 0rem 0rem .5rem 0rem;
+}
+.current-sales-widget{
+    height: 22.5vh;
+    margin: .5rem 0rem 0rem 0rem;
+}
+
+
+.widget-content{
+    width: 33vw;
+    color: white;
+    margin: 1vh 1vw 0rem 1vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.friends-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 38vh;
+}.friends-list .underline{
+    background-color: white;
+    height: 1px;
+    width: 100%;
+}
+.friends-card,
+.friend-details{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin: .5rem 0rem .5rem 0rem;
+    transition: all .2s ease;
+    width: 90%;
+    padding: .25rem;
+}.friends-card{
+    border-radius: .5rem;
+}.friend-details{
+    justify-content: unset;
+}.friends-card:hover{
+    background-color: #ffffff30;
+    cursor: pointer;
+}.friends-card:hover .friends-edit i{
+    cursor: pointer;
+    background-color: #00000030;
+}.friends-card .friend-logo{
+    background-color: white;
+    color: black;
+    border-radius: 100%;
+    padding: .5rem;
+    font-size: 1rem;
+}.friends-card div{
+    margin: 0rem .15rem 0rem .15rem;
+    background-color: none;
+    font-size: 1rem;
+}
+.friends-edit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}.friends-edit i{
+    color: white;
+    font-size: 1.25rem;
+    padding: .5rem;
+    background-color: var(--black);
+    border-radius: 100%;
+    margin: 0rem .5rem 0rem .5rem;
+    transition: all .2s ease;
+}.friends-edit i:hover{
+    color: var(--background);
+    cursor: pointer;
+}
+
+
+.inventory-content{
+    padding: .5rem 1rem .5rem 1rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 10vh);
+    grid-gap: 1.5rem;
+    height: 14vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+}.inventory-content div{
+    background-color: #ffffff30;
+    height: 11vh; width: 11vh;
+}.inventory-content div div{
+    font-size: .5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}.inventory-content div div i{
+    font-size: 2rem;
+}.inventory-content div div div{
+    height: fit-content;
+}

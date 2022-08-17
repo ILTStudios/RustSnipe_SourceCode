@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+html{
+    scroll-behavior: smooth;
+}
+:root{
+    --background: #0A0D25;
+    --black: #040303;
+    --red: #461111;
+    --lightred: #A13333;
+    --brown: #B3541E;
+    --highlight: #ECB365;
+}
+::-webkit-scrollbar{
+    width: 6px;
+    background-color: var(--background);
+}
+::-webkit-scrollbar-thumb{
+    background-color: var(--brown);
+    border-radius: 2rem;
+}
+.h-cont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.v-cont{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+body{
+    background-image: url(/img/main-bg.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+}
+.content{
+    margin: 0rem 10vw 0rem 10vw;
+    padding: 0rem 2vw 0rem 2vw;
+    transition: all .2s ease;
+    background-color: #04030350;
+}
+.content.blur{
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+}
+.space{
+    height: 10vh;
+}
+.underline{
+    width: 100px !important;
+    height: 1px;
+    background-color: var(--highlight);
+}

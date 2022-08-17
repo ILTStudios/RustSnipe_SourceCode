@@ -1,0 +1,22 @@
+.game-display{
+    margin: 2rem 0rem 0rem 0rem;
+    color: white;
+    font-weight: 700;
+}
+
+.game-display{
+    padding: 2rem 0 0 0;
+}
+.game-display .game-nav{
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.5rem;
+}
+.game-display .game-nav div{
+    transition: all .2s ease;
+}.game-display .game-nav div:hover{
+    color: var(--brown);
+    cursor: pointer;
+}

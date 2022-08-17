@@ -1,0 +1,72 @@
+.black_bar{
+    top: 0;
+    height: 10vh;
+    width: 100vw;
+    background-color: #0e110e;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    position: fixed;
+    justify-content: space-evenly;
+    z-index: 10;
+    padding: 0 0 0 0rem;
+}
+.logo{
+    padding: 0rem 0rem 0rem 0;
+    color: white;
+    font-size: 4rem;
+}.logo img{
+    padding: 3rem 0rem 0rem 0;
+    transform: rotate(0deg);
+    width: 15vw;
+    z-index: 1000;
+}
+.user-count{
+    display: flex;
+    flex-direction: row-reverse;
+    font-weight: 500;
+    width: fit-content;
+}.user-count div{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    margin: .25rem;
+    color: white;
+    text-shadow: -2px 2px var(--brown);
+    font-size: 1.15rem;
+    letter-spacing: -1px;
+}.user-count div i{
+    color: var(--red);
+    text-shadow: 0px 0px var(--red);
+}
+.steam-login{
+    margin: 0rem 1rem 0rem 0rem;
+    color: white;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .75rem 1rem .75rem 1rem;
+    background-color: var(--brown);
+    height: fit-content;
+    width: fit-content;
+    transition: all .2s ease;
+}.steam-login div{
+    margin: 0rem .5rem 0rem .5rem;
+}.steam-login div i{
+    font-size: 1.5rem;
+}.steam-login:hover{
+    cursor: pointer;
+    background-color: var(--black);
+    color: var(--brown);
+}
+
+.navigation-links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}.navigation-links a{
+    text-decoration: none;
+    color: white;
+}
