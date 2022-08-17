@@ -1,22 +1,52 @@
-.game-display{
-    margin: 2rem 0rem 0rem 0rem;
+.gamemodes{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(auto-fit, 32vh);
+    grid-gap: 1.5rem;
+    height: fit-content; width: 100%;
+    padding: 1rem;
+}
+.game-card{
+    background-color: var(--red);
+    height: 50vh;
+    width: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+}
+.game-image{
     color: white;
-    font-weight: 700;
+    height: 20vh;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}.game-image i{
+    transform: scale(5.5);
+}
+.game-name{
+    font-size: 2rem;
+    color: white;
+}.game-description{
+    width: 20vh;
+    text-align: center;
+    font-size: .75rem;
+    margin: 1rem 0rem 1rem 0rem;
 }
 
-.game-display{
-    padding: 2rem 0 0 0;
-}
-.game-display .game-nav{
+.game-play{
+    width: 20vh;
+    background-color: var(--background);
     color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 1.5rem;
-}
-.game-display .game-nav div{
+    text-align: center;
+    padding: .5rem;
+    border-radius: .5rem;
     transition: all .2s ease;
-}.game-display .game-nav div:hover{
+}.game-play:hover{
     color: var(--brown);
+    background-color: var(--black);
     cursor: pointer;
 }
